@@ -1,0 +1,29 @@
+{
+  "name": "project-context-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that provides project context awareness by reading and parsing project context files",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "project-context-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["mcp", "project-context", "claude", "ai-tools"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0"
+  }
+}
