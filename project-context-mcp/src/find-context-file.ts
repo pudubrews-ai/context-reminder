@@ -182,7 +182,7 @@ export async function findContextFile(config: Config): Promise<ContextFileResult
     mtime: null,
     warnings: [
       ...warnings,
-      `No project context file found in project root. Consider creating a PROJECT_CONTEXT.md file.`,
+      `No project context file found in project root. Use conversation_search or recent_chats tools to find current project status, or ask the user directly.`,
     ],
   };
 }
